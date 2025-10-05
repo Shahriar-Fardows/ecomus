@@ -1,0 +1,39 @@
+/* Navigation Button Style */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #111; /* button icon color */
+  background: white; /* bg color */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background: #111;
+  color: #fff;
+}
+
+/* icon size */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 16px;
+}
+a, button, input[type="button"], input[type="submit"], .clickable {
+  cursor: pointer;
+}
+
+:is(.swiper-button-prev, .swiper-button-next) svg {
+    object-fit: contain;
+    transform-origin: center;
+    fill: currentColor;
+    pointer-events: none;
+    width: 100%;
+    height: 50% !important;
+}
+
+
+/* .swiper-button-prev.swiper-button-disabled, .swiper-button-next {
+    color: black !important;
+} */
